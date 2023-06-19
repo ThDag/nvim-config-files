@@ -1,0 +1,1 @@
+complete --command test.py --no-files --arguments "(env _TEST.PY_COMPLETE=complete_fish _TYPER_COMPLETE_FISH_ACTION=get-args _TYPER_COMPLETE_ARGS=(commandline -cp) test.py)" --condition "env _TEST.PY_COMPLETE=complete_fish _TYPER_COMPLETE_FISH_ACTION=is-args _TYPER_COMPLETE_ARGS=(commandline -cp) test.py"
