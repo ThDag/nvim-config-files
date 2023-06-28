@@ -41,3 +41,4 @@ keymap.set('n', '<C-k>', ':w<Return>:split<Return><C-w>w:term python3 %<Return>'
 -- copilot
 
 -- only new keybinding to run :Copilot panel for the keybind cp
+keymap.set('n', 'cp', ':Copilot panel<Return>')
