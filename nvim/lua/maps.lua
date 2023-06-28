@@ -37,3 +37,7 @@ keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- Run python code
 keymap.set('n', '<C-k>', ':w<Return>:split<Return><C-w>w:term python3 %<Return>')
+
+-- copilot
+
+-- only new keybinding to run :Copilot panel for the keybind cp

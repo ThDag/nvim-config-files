@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/mac/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/mac/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["git.nvim"] = {
     loaded = true,
     path = "/Users/mac/.local/share/nvim/site/pack/packer/start/git.nvim",
@@ -213,6 +218,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/mac/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/mac/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   ["zen-mode.nvim"] = {
     loaded = true,
