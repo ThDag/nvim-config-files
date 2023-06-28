@@ -23,7 +23,7 @@ set -U fish_greeting "
 # "
 
 alias tree='exa -T --icons -F'
-alias ls='exa --long --git --icons --no-user --header --no-permissions -F'
-alias lsa='exa --long --git --icons --no-user --header --no-permissions -F -a'
+alias ls='exa --long --git --icons --no-user --header -F'
+alias lsa='exa --long --git --icons --no-user --header -F -a'
 alias ll='exa --icons -F'
 alias lla='exa --icons -F -a'
