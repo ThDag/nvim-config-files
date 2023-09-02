@@ -33,7 +33,15 @@ telescope.setup {
           ["h"] = fb_actions.goto_parent_dir,
           ["/"] = function()
             vim.cmd('startinsert')
-          end
+          end,
+          ["<C-u>"] = function(prompt_bufnr)
+            for i = 1, 10 do actions.move_selection_previous(prompt_bufnr) end
+          end,
+          ["<C-d>"] = function(prompt_bufnr)
+            for i = 1, 10 do actions.move_selection_next(prompt_bufnr) end
+          end,
+          ["<PageUp>"] = actions.preview_scrolling_up,
+          ["<PageDown>"] = actions.preview_scrolling_down,
         },
       },
     },
@@ -76,4 +84,3 @@ vim.keymap.set("n", "sf", function()
     layout_config = { height = 40 }
   })
 end)
-

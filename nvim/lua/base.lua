@@ -31,7 +31,7 @@ vim.opt.path:append { '**' } -- Finding files - Search down into subfolders
 vim.opt.wildignore:append { '*/node_modules/*' }
 
 -- make cursor move free of character (in space)
-vim.opt.virtualedit = 'all'
+-- vim.opt.virtualedit = 'all'
 
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
