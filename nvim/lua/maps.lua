@@ -35,10 +35,15 @@ keymap.set('n', '<C-w><down>', '<C-w>-')
 -- Exit search (dont find it necceseary)
 -- keymap.set('n', '<esc>', ':let @/=""<Return>')
 
+-- Move lines in visual mode
+keymap.set('v', 'J', ":m '>+1<Return>gv=gv")
+keymap.set('v', 'K', ":m '<-2<Return>gv=gv")
+
+-- cursor stays at the same place after doing "J"
+keymap.set('n', 'J', 'mzJ`z')
+
 -- Run python code
 keymap.set('n', '<C-k>', ':w<Return>:split<Return><C-w>w:term python3 %<Return>')
 
 -- copilot
-
--- only new keybinding to run :Copilot panel for the keybind cp
 keymap.set('n', 'cp', ':Copilot panel<Return>')
