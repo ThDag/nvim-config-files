@@ -1,14 +1,12 @@
-local status, blankline = pcall(require, "indent-blankline")
+local status, blankline = pcall(require, "indent_blankline")
 if (not status) then return end
 
 -- setting current context highlight for indent-blankline
 
 -- note; this doesnt take effect idk how to fix.
-blankline.setup = {
-  char = "+",
+blankline.setup({
   buftype_exclude = { "terminal", "nofile" },
   show_current_context = true,
-  show_current_context_start = true,
   filetype_exclude = { "help", "terminal", "dashboard", "packer" },
   context_patterns = {
     "class",
@@ -32,4 +30,4 @@ blankline.setup = {
     "import_statement",
     "operation_type",
   },
-}
+})
