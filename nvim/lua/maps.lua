@@ -20,7 +20,7 @@ keymap.set('n', 'te', ':tabedit<Return>')
 keymap.set('n', 'ss', ':split<Return><C-w>w')
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
 -- Move window
-keymap.set('n', '<Space>', '<C-w>w')
+keymap.set('n', '<leader>w', '<C-w>w')
 keymap.set('', 'sh', '<C-w>h')
 keymap.set('', 'sk', '<C-w>k')
 keymap.set('', 'sj', '<C-w>j')
@@ -31,6 +31,8 @@ keymap.set('n', '<C-w><left>', '<C-w><')
 keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
+
+-- mine
 
 -- Exit search (dont find it necceseary)
 -- keymap.set('n', '<esc>', ':let @/=""<Return>')
@@ -47,3 +49,5 @@ keymap.set('n', '<C-k>', ':w<Return>:split<Return><C-w>w:term python3 %<Return>'
 
 -- copilot
 keymap.set('n', 'cp', ':Copilot panel<Return>')
+
+keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)

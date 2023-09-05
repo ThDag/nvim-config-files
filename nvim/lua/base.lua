@@ -30,8 +30,6 @@ vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.path:append { '**' } -- Finding files - Search down into subfolders
 vim.opt.wildignore:append { '*/node_modules/*' }
 
--- make cursor move free of character (in space)
--- vim.opt.virtualedit = 'all'
 
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
@@ -45,3 +43,16 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
+
+-- mine
+
+-- make cursor move free of character (in space)
+-- vim.opt.virtualedit = 'all'
+
+-- turn of vim backups
+vim.opt.swapfile = false
+vim.opt.backup = false
+
+-- set undodir
+vim.opt.undodir = os.getenv('HOME') .. '/.config/nvim/undodir'
+vim.opt.undofile = true

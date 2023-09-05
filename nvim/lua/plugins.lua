@@ -54,5 +54,5 @@ packer.startup(function(use)
   -- mine
   use 'tpope/vim-surround'
   use 'github/copilot.vim'
-  use 'lukas-reineke/indent-blankline.nvim' -- for indent indication.
+  use 'mbbill/undotree'
 end)
