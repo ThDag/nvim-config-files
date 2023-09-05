@@ -50,7 +50,9 @@ packer.startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browse
+
+  -- mine
   use 'tpope/vim-surround'
   use 'github/copilot.vim'
-  use "lukas-reineke/indent-blankline.nvim" -- for indent indication.
+  use 'lukas-reineke/indent-blankline.nvim' -- for indent indication.
 end)
