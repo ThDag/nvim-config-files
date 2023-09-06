@@ -16,5 +16,5 @@ if is_mac then
 end
 
 
--- define leader key
-vim.g.mapleader = ' '
+-- what character should be leader key? default is '\' and it should be changed to ',' or something else
+vim.g.mapleader = ','
