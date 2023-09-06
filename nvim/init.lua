@@ -16,5 +16,6 @@ if is_mac then
 end
 
 
--- what character should be leader key? default is '\' and it should be changed to ',' or something else
-vim.g.mapleader = ','
+-- what character should be leader key? default is '\' and it should be changed to ',' or something else (copilot compliation)
+-- vim.g.mapleader = ','
+-- command to set leader key is :let mapleader = ',' (copilot compliation)
