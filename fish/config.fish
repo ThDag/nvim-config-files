@@ -22,11 +22,13 @@ set -U fish_greeting "
 #  ▀▀▀  ▀  ▀ ▀▀▀ · ▀  ▀ 
 # "
 
-alias tree='exa -T --icons -F'
-alias ls='exa --long --git --icons --no-user --header -F'
-alias lsa='exa --long --git --icons --no-user --header -F -a'
-alias ll='exa --icons -F'
-alias lla='exa --icons -F -a'
+alias tree='eza -T --icons -F'
+alias ls='eza --long --git --icons --no-user --header -F'
+alias lsg='eza --long --git --git-repos --icons --no-user --header -F'
+alias lsag='eza --long --git --icons --no-user --header -F -a'
+alias lsa='eza --long --git --git-repos --icons --no-user --header -F -a'
+alias ll='eza --icons -F'
+alias lla='eza --icons -F -a'
 
 
 set -gx TERM xterm-256color
